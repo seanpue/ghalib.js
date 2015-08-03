@@ -202,7 +202,7 @@ Parser = (function() {
       }
       to_match = slice.call(this.parse_tokens.slice(i_start + match_tokens.length, i_start + match_tokens.length + next_classes.length)).concat(slice.call(BLANK));
       for (i = k = 0, ref2 = next_classes.length - 1; 0 <= ref2 ? k <= ref2 : k >= ref2; i = 0 <= ref2 ? ++k : --k) {
-        if (!prev_classes[i] || !(ref3 = next_classes[i], indexOf.call(this.tokens[to_match[i]], ref3) >= 0)) {
+        if (!next_classes[i] || !(ref3 = next_classes[i], indexOf.call(this.tokens[to_match[i]], ref3) >= 0)) {
           return false;
         }
       }

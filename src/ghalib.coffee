@@ -157,7 +157,7 @@ class Parser
           to_match = [@parse_tokens[i_start+match_tokens.length...i_start+match_tokens.length + next_classes.length]...,BLANK...]
 
           for i in [0..next_classes.length-1]
-            if not(prev_classes[i]) or not( next_classes[i] in @tokens[to_match[i]] )
+            if not(next_classes[i]) or not( next_classes[i] in @tokens[to_match[i]] )
               return false
 
         return true
