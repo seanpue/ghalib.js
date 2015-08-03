@@ -19,7 +19,7 @@ base_url = '$base_url';
 document.write('<link rel="stylesheet" type="text/css" href=base_url+"css/ghalib.js.css?v=$timestamp" />');
 var js = ["lib/urdu_parser_data.js","lib/devanagari_parser_data.js","lib/diacritics_parser_data.js","lib/ghalib.js","lib/jquery.min.js","lib/ghalib-loader.js"]
 for (var i = 0, l = js.length; i < l; i++) {
-    document.write('<script src="' + base_url + js[i] + '?v=$timestamp"' type="text/javascript"></scr' + 'ipt>');
+    document.write('<script src="' + base_url + js[i] + '?v=$timestamp" type="text/javascript"></scr' + 'ipt>');
 }
 ''')
 
