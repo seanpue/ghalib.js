@@ -1,3 +1,10 @@
+# My files
+old_source/
+.ipynb_checkpoints/
+output/
+bin/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
