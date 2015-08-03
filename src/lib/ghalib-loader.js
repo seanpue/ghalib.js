@@ -98,7 +98,7 @@ $(function() {
   languageBarHTML = '';
   if (!c) {
     setCookie('mealac_script', 'diacritics', 1000, '/');
-    getCookie('mealac_script');
+    c=getCookie('mealac_script');
     if (!c) {
       languageBarHTML = '<p><em>Cookies need to be enabled to store your script preference between pages.</em></p>';
     }
