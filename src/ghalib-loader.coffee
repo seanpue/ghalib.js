@@ -126,7 +126,13 @@ $ ->
   # languageBar.attr('id','languageBar')
   languageBar.appendTo('body')
 
-  $(".ajax").colorbox();
+  $(".ajax")
+    .colorbox
+      .onComplete ()->
+        $('#cboxLoadedContent').css('backgroundColor', 'red');
+
+
+
   changeScript = () ->
     $('a.languageButton').each (index,element) =>
       id = $(element).attr("id")
