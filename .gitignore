@@ -4,7 +4,7 @@ old_source/
 output/
 bin/
 00ghalib/
-
+*.swp
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
