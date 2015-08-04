@@ -126,7 +126,7 @@ $ ->
   # languageBar.attr('id','languageBar')
   languageBar.appendTo('body')
 
-  $(".ajax").colorbox()
+  $(".ajax").colorbox({ width:"50%" })
 
 
 
