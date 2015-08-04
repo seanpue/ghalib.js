@@ -15,6 +15,7 @@ div.languageBar {
 /*
  * Noto Nastaliq Urdu Draft (Arabic) http://www.google.com/fonts/earlyaccess
  */
+ /*
 @font-face {
   font-family: 'Noto Nastaliq Urdu Draft';
   font-style: normal;
@@ -25,12 +26,12 @@ div.languageBar {
        url(//fonts.gstatic.com/ea/notonastaliqurdudraft/v3/NotoNastaliqUrduDraft.woff) format('woff'),
        url(//fonts.gstatic.com/ea/notonastaliqurdudraft/v3/NotoNastaliqUrduDraft.ttf) format('truetype');
 }
-
+*/
 .urdu.Nastaliq {
   /* Copied from Wikipedia */
   font-style: normal;
   font-size: 125%;
-  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu Draft', 'Urdu Typesetting', 'Noto Nastaliq Urdu', 'Noto Nastaliq Urdu Draft', 'Hussaini Nastaleeq', 'AlQalam Taj Nastaleeq', IranNastaliq, 'Nafees Nastaleeq', 'Nafees Nastaleeq v1.01', Nafees, 'Pak Nastaleeq', 'PDMS_Jauhar', 'Alvi Lahori Nastaleeq';
+  font-family: 'Jameel Noori Nastaleeq',  'Urdu Typesetting', 'Noto Nastaliq Urdu', 'Noto Nastaliq Urdu Draft', 'Hussaini Nastaleeq', 'AlQalam Taj Nastaleeq', IranNastaliq, 'Nafees Nastaleeq', 'Nafees Nastaleeq v1.01', Nafees, 'Pak Nastaleeq', 'PDMS_Jauhar', 'Alvi Lahori Nastaleeq';
   direction: rtl;
 }
 .urdu.Devanagari{
