@@ -128,8 +128,6 @@ $ ->
 
   $(".ajax")
     .colorbox
-      .onComplete ()->
-        $('#cboxLoadedContent').css('backgroundColor', 'red');
 
 
 
