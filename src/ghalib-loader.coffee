@@ -116,7 +116,7 @@ $ ->
                     --
                     <a id="plain_roman_button" class="languageButton" href="#">plain roman</a>
                     --
-                    <a id="more_info_button" class ="ajax" href="http://www.columbia.edu/~asp49/00ghalib/moreinfo.html"> more information</a>
+                    <a id="more_info_button" class ="ajax" href="http://www.columbia.edu/~asp49/00ghalib/moreinfo.html">more information</a>
                     --
                     </div>'
 
@@ -126,8 +126,7 @@ $ ->
   # languageBar.attr('id','languageBar')
   languageBar.appendTo('body')
 
-  $(".ajax")
-    .colorbox
+  $(".ajax").colorbox()
 
 
 
