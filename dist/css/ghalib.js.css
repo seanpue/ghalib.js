@@ -12,11 +12,14 @@ div.languageBar {
   margin-right: auto;
 
 }
+
+@import url(http://fonts.googleapis.com/earlyaccess/notonastaliqurdudraft.css);
+
 .urdu.Nastaliq {
   /* Copied from Wikipedia */
   font-style: normal;
   font-size: 125%;
-  font-family: 'Jameel Noori Nastaleeq', 'Urdu Typesetting', 'Noto Nastaliq Urdu', 'Noto Nastaliq Urdu Draft', 'Hussaini Nastaleeq', 'AlQalam Taj Nastaleeq', IranNastaliq, 'Nafees Nastaleeq', 'Nafees Nastaleeq v1.01', Nafees, 'Pak Nastaleeq', 'PDMS_Jauhar', 'Alvi Lahori Nastaleeq';
+  font-family: 'Noto Nastaliq Urdu Draft','Jameel Noori Nastaleeq', 'Urdu Typesetting', 'Noto Nastaliq Urdu', 'Noto Nastaliq Urdu Draft', 'Hussaini Nastaleeq', 'AlQalam Taj Nastaleeq', IranNastaliq, 'Nafees Nastaleeq', 'Nafees Nastaleeq v1.01', Nafees, 'Pak Nastaleeq', 'PDMS_Jauhar', 'Alvi Lahori Nastaleeq';
   direction: rtl;
 }
 .urdu.Devanagari{
