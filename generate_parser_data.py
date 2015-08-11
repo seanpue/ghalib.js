@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[6]:
+# In[1]:
 
 import sys,json
 sys.path.append('./graphparser')
@@ -13,14 +13,14 @@ devanagari_data_file = './graphparser/settings/devanagari.yaml'
 diacritics_data_file = './graphparser/settings/diacritics.yaml'
 
 
-# In[7]:
+# In[2]:
 
 parser = gp.GraphParser(urdu_data_file)
 assert parser.parse("shaan").output==u'\u0634\u0627\u0646'
 assert parser.parse('karegaa').output==u'\u06a9\u0631\u06d2\u06af\u0627'
 
 
-# In[8]:
+# In[3]:
 
 def compress_nodes(parser):
 #    ''' CSub'''
@@ -91,7 +91,7 @@ parser = gp.GraphParser(urdu_data_file)
      
 
 
-# In[9]:
+# In[4]:
 
 def compress_onmatch_rules(parser):
     omr = parser.onmatch_rules
@@ -113,7 +113,7 @@ def compress_tokens(parser):
     return output
 
 
-# In[10]:
+# In[5]:
 
 import itertools
 

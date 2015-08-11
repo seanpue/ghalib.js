@@ -1,6 +1,4 @@
 # ghalib.js
-New repository for javascript on Frances Pritchett's webpages.
+New repository for javascript on Columbia
 
-
-
-
+Add cookie
