@@ -73,9 +73,9 @@ $(function() {
     })(this));
     $('em.urdu').removeClass(window.lastClass).addClass(textClasses[textPreference]);
     if (textPreference === 'urdu') {
-      $('p.text').addClass('urdu.Nastaliq');
+      $('p.text').addClass('urdu Nastaliq');
     } else {
-      $('p.text').removeClass('urdu.Nastaliq');
+      $('p.text').removeClass('urdu Nastaliq');
     }
     window.lastClass = textClasses[textPreference];
   };
