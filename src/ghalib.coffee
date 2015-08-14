@@ -146,6 +146,9 @@ class Parser
 
           for i in [0...prev_classes.length]
             #console.log(i)
+            if not to_match[i] in @tokens
+              console.log('bad prev token:'+i)
+              return false
             if not(prev_classes[i]) or not( prev_classes[i] in @tokens[to_match[i]] )
               return false
 
@@ -157,6 +160,9 @@ class Parser
           to_match = [@parse_tokens[i_start+match_tokens.length...i_start+match_tokens.length + next_classes.length]...,BLANK...]
 
           for i in [0..next_classes.length-1]
+            if not to_match[i] in @tokens
+              console.log('bad next token:'+i)
+              return false
             if not(next_classes[i]) or not( next_classes[i] in @tokens[to_match[i]] )
               return false
 
