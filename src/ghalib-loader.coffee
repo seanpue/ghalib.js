@@ -63,6 +63,11 @@ $ ->
     $('em.urdu')
       .removeClass window.lastClass
       .addClass textClasses[textPreference]
+    # hard hack here
+    if textPreference=='urdu'
+      $('p.text').addClass 'urdu'
+    else
+      $('p.text').removeClass 'urdu'
 
     window.lastClass = textClasses[textPreference]
     return
