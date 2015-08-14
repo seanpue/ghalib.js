@@ -65,9 +65,9 @@ $ ->
       .addClass textClasses[textPreference]
     # hard hack here
     if textPreference=='urdu'
-      $('p.text').addClass 'urdu'
+      $('p.text').addClass 'urdu.Nastaliq'
     else
-      $('p.text').removeClass 'urdu'
+      $('p.text').removeClass 'urdu.Nastaliq'
 
     window.lastClass = textClasses[textPreference]
     return
