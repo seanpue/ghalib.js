@@ -20,6 +20,12 @@ assert parser.parse("shaan").output==u'\u0634\u0627\u0646'
 assert parser.parse('karegaa').output==u'\u06a9\u0631\u06d2\u06af\u0627'
 
 
+# In[6]:
+
+dev_parser = gp.GraphParser(devanagari_data_file)
+print dev_parser.parse('mudda((aa')
+
+
 # In[3]:
 
 def compress_nodes(parser):
