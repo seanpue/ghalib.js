@@ -169,7 +169,7 @@ Parser = (function() {
   };
 
   Parser.prototype.match_rule = function(rule, level) {
-    var i, i_start, j, k, match_tokens, next_classes, prev_classes, ref, ref1, ref2, ref3, ref4, ref5, to_match, x;
+    var i, i_start, j, k, match_tokens, next_classes, prev_classes, ref, ref1, ref2, ref3, ref4, to_match, x;
     match_tokens = rule[MATCH_TOKENS];
     i_start = this.token_i - rule[PREV_LENGTH];
     if (i_start < 0 || i_start + match_tokens.length > this.parse_tokens.length) {
@@ -205,12 +205,16 @@ Parser = (function() {
         return false;
       }
       to_match = slice.call(this.parse_tokens.slice(i_start + match_tokens.length, i_start + match_tokens.length + next_classes.length)).concat(slice.call(BLANK));
+      if (!(to_match != null)) {
+        console.log('bad to_match for token ' + i);
+        return false;
+      }
       for (i = k = 0, ref3 = next_classes.length - 1; 0 <= ref3 ? k <= ref3 : k >= ref3; i = 0 <= ref3 ? ++k : --k) {
-        if (ref4 = !to_match[i], indexOf.call(this.tokens, ref4) >= 0) {
+        if (!(this.tokens[to_match[i]] != null)) {
           console.log('bad next token:' + i);
           return false;
         }
-        if (!next_classes[i] || !(ref5 = next_classes[i], indexOf.call(this.tokens[to_match[i]], ref5) >= 0)) {
+        if (!next_classes[i] || !(ref4 = next_classes[i], indexOf.call(this.tokens[to_match[i]], ref4) >= 0)) {
           return false;
         }
       }
@@ -260,8 +264,13 @@ Parser = (function() {
 
   Parser.prototype.test_omr_classes = function(omr_classes, classes_to_test) {
     var found, i, j, ref, ref1;
+    alert('testing omr classes');
     for (i = j = 0, ref = omr_classes.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
-      found = (ref1 = omr_classes[i], indexOf.call(classes_to_test[i], ref1) >= 0);
+      if (classes_to_test[i] != null) {
+        found = (ref1 = omr_classes[i], indexOf.call(classes_to_test[i], ref1) >= 0);
+      } else {
+        console.log('could not find class ' + i + ' in omr_classes');
+      }
       if (!found) {
         return false;
       }

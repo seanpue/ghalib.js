@@ -23,4 +23,4 @@ for (var i = 0, l = js.length; i < l; i++) {
 }
 ''')
 
-print s.substitute(base_url = 'http://www.columbia.edu/~asp49/00ghalib/', timestamp=timestamp)
+print(s.substitute(base_url = 'http://www.columbia.edu/~asp49/00ghalib/', timestamp=timestamp))

@@ -6,7 +6,6 @@
 import sys,json
 sys.path.append('./graphparser')
 import graphparser as gp
-reload(gp)
 from networkx.readwrite import json_graph
 urdu_data_file = './graphparser/settings/urdu.yaml'
 devanagari_data_file = './graphparser/settings/devanagari.yaml'
@@ -20,13 +19,13 @@ assert parser.parse("shaan").output==u'\u0634\u0627\u0646'
 assert parser.parse('karegaa').output==u'\u06a9\u0631\u06d2\u06af\u0627'
 
 
-# In[6]:
+# In[3]:
 
 dev_parser = gp.GraphParser(devanagari_data_file)
-print dev_parser.parse('mudda((aa')
+print(dev_parser.parse('mudda((aa'))
 
 
-# In[3]:
+# In[12]:
 
 def compress_nodes(parser):
 #    ''' CSub'''
@@ -73,7 +72,7 @@ def compress_edges(parser):
         if pr.next_classes:
             o['nc'] = classes_int(pr.next_classes)
         o['tl'] = pr.tokens_length
-        print pr.tokens_length
+#        print(pr.tokens_length)
         o['p'] = pr.production
 
         return o
@@ -81,7 +80,7 @@ def compress_edges(parser):
 
     x = dict(parser.get_sorted_out_edges(dg))
 
-    for node_start, values in x.iteritems():
+    for node_start, values in x.items():
         for u,v,d in values:
             if 'weight' in d: d.pop('weight')
             if 'rule' in d:
@@ -97,7 +96,7 @@ parser = gp.GraphParser(urdu_data_file)
      
 
 
-# In[4]:
+# In[13]:
 
 def compress_onmatch_rules(parser):
     omr = parser.onmatch_rules
@@ -114,12 +113,12 @@ def compress_tokens(parser):
     def classes_int(classes):
         return [parser.token_class_names.index(c) for c in classes]
     output ={}
-    for token,classes in parser.tokens.iteritems():
+    for token,classes in parser.tokens.items():
         output[token]=classes_int(classes)
     return output
 
 
-# In[5]:
+# In[14]:
 
 import itertools
 
@@ -200,6 +199,11 @@ gen_parser_data(parser_name = 'diacritics',
                 parser_data_file = './graphparser/settings/diacritics.yaml',
                 output_file = 'lib/diacritics_parser_data.js',
                 compress=True)
+
+#!coffee --compile --bare --output lib/ src/
+
+
+# In[15]:
 
 #!coffee --compile --bare --output lib/ src/
 
