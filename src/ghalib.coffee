@@ -159,8 +159,12 @@ class Parser
               return false
           to_match = [@parse_tokens[i_start+match_tokens.length...i_start+match_tokens.length + next_classes.length]...,BLANK...]
 
+          if !(to_match?)
+             console.log('bad to_match for token '+i)
+             return false
+
           for i in [0..next_classes.length-1]
-            if not to_match[i] in @tokens
+            if !(@tokens[to_match[i]]?) #not to_match[i] in @tokens
               console.log('bad next token:'+i)
               return false
             if not(next_classes[i]) or not( next_classes[i] in @tokens[to_match[i]] )
@@ -204,8 +208,13 @@ class Parser
     @descend_node(0,0)
 
   test_omr_classes: (omr_classes, classes_to_test) ->
+    alert('testing omr classes')
     for i in [0...omr_classes.length]
-      found = omr_classes[i] in classes_to_test[i] # is zero an e
+      #console.log("testing omr classes")
+      if classes_to_test[i]?
+         found = omr_classes[i] in classes_to_test[i] # is zero an e
+      else
+         console.log('could not find class '+i+' in omr_classes')
       if !(found)
 #        console.log("omr_classes"+JSON.stringify(omr_classes[i])+"not in classes_to_test[i]"+JSON.stringify(classes_to_test[i]))
         return false
