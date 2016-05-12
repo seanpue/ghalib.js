@@ -208,7 +208,6 @@ class Parser
     @descend_node(0,0)
 
   test_omr_classes: (omr_classes, classes_to_test) ->
-    alert('testing omr classes')
     for i in [0...omr_classes.length]
       #console.log("testing omr classes")
       if classes_to_test[i]?
