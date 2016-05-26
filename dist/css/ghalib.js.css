@@ -33,7 +33,7 @@ div.languageBar {
   font-size: 125%;
   font-family: 'Jameel Noori Nastaleeq',  'Urdu Typesetting', 'Noto Nastaliq Urdu', 'Noto Nastaliq Urdu Draft', 'Hussaini Nastaleeq', 'AlQalam Taj Nastaleeq', IranNastaliq, 'Nafees Nastaleeq', 'Nafees Nastaleeq v1.01', Nafees, 'Pak Nastaleeq', 'PDMS_Jauhar', 'Alvi Lahori Nastaleeq';
   direction: rtl;
-  text-align: right;
+  /* text-align: right; removed at Fran's request 5/26/2016*/
 }
 .urdu.Devanagari{
   font-style: normal;
