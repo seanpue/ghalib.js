@@ -160,7 +160,7 @@ $ ->
   loc = $('div.verse:first')
   loc = $('div.verse-entry:first') if !(loc.length)
   loc = $('div.boxer:first') if !(loc.length)
-  loc = $('div.top-ornament:last') if !(loc.length)
+  loc = $('div#top-ornament:last') if !(loc.length)
   
   $(languageBar).insertBefore(loc) if loc.length
 

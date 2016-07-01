@@ -155,7 +155,7 @@ $(function() {
     loc = $('div.boxer:first');
   }
   if (!loc.length) {
-    loc = $('div.top-ornament:last');
+    loc = $('div#top-ornament:last');
   }
   if (loc.length) {
     $(languageBar).insertBefore(loc);
