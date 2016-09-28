@@ -1,8 +1,8 @@
 
 base_url = 'http://www.columbia.edu/~asp49/00ghalib/';
-document.write('<link rel="stylesheet" type="text/css" href='+base_url+'css/ghalib.js.css?v=?2016-07-01::15:24:47" />');
+document.write('<link rel="stylesheet" type="text/css" href='+base_url+'css/ghalib.js.css?v=?2016-09-27::21:14:48" />');
 var js = ["lib/urdu_parser_data.js","lib/devanagari_parser_data.js","lib/diacritics_parser_data.js","lib/ghalib.js","lib/jquery.min.js","lib/jquery.colorbox-min.js","lib/ghalib-loader.js"]
 for (var i = 0, l = js.length; i < l; i++) {
-    document.write('<script src="' + base_url + js[i] + '?v=?2016-07-01::15:24:47" type="text/javascript"></scr' + 'ipt>');
+    document.write('<script src="' + base_url + js[i] + '?v=?2016-09-27::21:14:48" type="text/javascript"></scr' + 'ipt>');
 }
 
