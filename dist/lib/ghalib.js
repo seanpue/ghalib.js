@@ -345,7 +345,3 @@ Parser = (function() {
 window.p_hi = new Parser('devanagari', devanagari_tokens, devanagari_token_regex, devanagari_graph, devanagari_onmatch);
 
 window.p_ur = new Parser('urdu', urdu_tokens, urdu_token_regex, urdu_graph, urdu_onmatch);
-
-console.log(p_hi, p_ur);
-
-console.log(p_hi.get_onmatch_rules_by_token);
