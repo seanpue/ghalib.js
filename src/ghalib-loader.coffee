@@ -156,7 +156,7 @@ $ ->
       undefined
     return
 
-  loc = $('div.top-navbar')
+  loc = $('div#top-navbar')
   if loc
     $(languageBar).insertAfter(loc)
   else
