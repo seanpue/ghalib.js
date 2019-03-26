@@ -163,7 +163,7 @@ def gen_parser_data(parser_name = 'urdu',
 
    
     
-    graph_json = json.dumps( {'node': nodes, 'edge': sorted_edges, 'compressed': compress} ,separators=(',', ':') )
+    graph_json = json.dumps( {'node':  dict(nodes.data()), 'edge': sorted_edges, 'compressed': compress} ,separators=(',', ':') )
     
     js_template = """
 {PARSER_NAME}_tokens = {TOKENS};
