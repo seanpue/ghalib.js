@@ -44,6 +44,13 @@ div.languageBar {
   /* blank for now.. Remove italics?*/
   direction: ltr;
 }
+div.verse em.urdu.Nastaliq{
+  font-size: 30px;
+}
+div.vs em.urdu.Nastaliq{
+  font-size: 30px;
+}
+
 /* from https://github.com/jackmoore/colorbox/blob/master/example4/colorbox.css */
 
 /*

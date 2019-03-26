@@ -3,6 +3,7 @@
 
 # In[1]:
 
+
 import sys,json
 sys.path.append('./graphparser')
 import graphparser as gp
@@ -12,7 +13,8 @@ devanagari_data_file = './graphparser/settings/devanagari.yaml'
 diacritics_data_file = './graphparser/settings/diacritics.yaml'
 
 
-# In[8]:
+# In[2]:
+
 
 parser = gp.GraphParser(urdu_data_file)
 assert parser.parse("shaan").output==u'\u0634\u0627\u0646'
@@ -22,11 +24,13 @@ parser.parse(' ay ')
 
 # In[3]:
 
+
 dev_parser = gp.GraphParser(devanagari_data_file)
 print(dev_parser.parse('mudda((aa'))
 
 
 # In[4]:
+
 
 def compress_nodes(parser):
 #    ''' CSub'''
@@ -99,6 +103,7 @@ parser = gp.GraphParser(urdu_data_file)
 
 # In[5]:
 
+
 def compress_onmatch_rules(parser):
     omr = parser.onmatch_rules
     if omr==None: return omr
@@ -119,7 +124,8 @@ def compress_tokens(parser):
     return output
 
 
-# In[10]:
+# In[34]:
+
 
 import itertools
 
@@ -162,8 +168,7 @@ def gen_parser_data(parser_name = 'urdu',
      
 
    
-    
-    graph_json = json.dumps( {'node':  dict(nodes.data()), 'edge': sorted_edges, 'compressed': compress} ,separators=(',', ':') )
+    graph_json = json.dumps( {'node': dict(nodes.data()), 'edge': sorted_edges, 'compressed': compress} ,separators=(',', ':') )
     
     js_template = """
 {PARSER_NAME}_tokens = {TOKENS};
@@ -208,10 +213,6 @@ gen_parser_data(parser_name = 'diacritics',
 
 # In[15]:
 
+
 #!coffee --compile --bare --output lib/ src/
-
-
-# In[ ]:
-
-
 
