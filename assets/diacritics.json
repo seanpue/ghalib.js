@@ -1,0 +1,461 @@
+{
+  "rules": {
+    "\u0000": "",
+    "\t": "\t",
+    "\n": "\n",
+    " ": " ",
+    "!": "!",
+    "\"": "\"",
+    "'": "'",
+    "(": "(",
+    "((": "\u02bf",
+    ")": ")",
+    "))": "\u02be",
+    ",": ",",
+    "-": "-",
+    "--": "--",
+    "----": "----",
+    "-e": "-e",
+    ". <wb>": ".",
+    ".s": "\u1e63",
+    ".z": "\u1e93",
+    "/": "/",
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    ":": ":",
+    ":n": "\u1e45",
+    ":t": "t\u0324",
+    ":z": "z\u0324",
+    ";": ";",
+    ";aa": "\u00e2",
+    ";D": "\u1e0d",
+    ";Dh": "\u1e0dh",
+    ";e": "\u011b",
+    ";G": "\u0121h",
+    ";h": "\u1e25",
+    ";N": "\u00f1",
+    ";o": "\u01d2",
+    ";R": "\u1e5b",
+    ";Rh": "\u1e5bh",
+    ";s": "\u1e61",
+    ";T": "\u1e6d",
+    ";Th": "\u1e6dh",
+    ";x": "\u1e33h",
+    ";z": "\u017c",
+    "<-e>": "(-e)",
+    "<wb> i ((": "\u011b",
+    "?": "?",
+    "[": "[",
+    "]": "]",
+    "^a": "a",
+    "^ai": "ai",
+    "^au": "au",
+    "^i": "i",
+    "^ii": "\u012b",
+    "^u": "u",
+    "^uu": "\u016b",
+    "_": "-",
+    "a": "a",
+    "aa": "\u0101",
+    "ai": "ai",
+    "au": "au",
+    "b": "b",
+    "bh": "bh",
+    "ch": "ch",
+    "chh": "chh",
+    "d": "d",
+    "dh": "dh",
+    "e": "e",
+    "f": "f",
+    "g": "g",
+    "gh": "gh",
+    "h": "h",
+    "i": "i",
+    "ii": "\u012b",
+    "j": "j",
+    "jh": "jh",
+    "k": "k",
+    "kh": "kh",
+    "l": "l",
+    "m": "m",
+    "n": "n",
+    "o": "o",
+    "p": "p",
+    "ph": "ph",
+    "q": "q",
+    "r": "r",
+    "s": "s",
+    "sh": "sh",
+    "t": "t",
+    "th": "th",
+    "u": "u",
+    "uu": "\u016b",
+    "v": "v",
+    "w": "w",
+    "y": "y",
+    "z": "z",
+    "zh": "zh",
+    "|": ""
+  },
+  "tokens": {
+    "\u0000": [
+      "wb"
+    ],
+    "\t": [
+      "wb"
+    ],
+    "\n": [
+      "wb"
+    ],
+    "\r": [
+      "wb"
+    ],
+    " ": [
+      "wb"
+    ],
+    "!": [
+      "punctuation",
+      "wb"
+    ],
+    "\"": [
+      "wb"
+    ],
+    "'": [
+      "letter_break"
+    ],
+    "(": [
+      "punctuation",
+      "wb"
+    ],
+    "((": [
+      "ain",
+      "consonant"
+    ],
+    "(-e)": [
+      "hidden_izaafat"
+    ],
+    ")": [
+      "punctuation",
+      "wb"
+    ],
+    "))": [
+      "consonant"
+    ],
+    ",": [
+      "punctuation",
+      "wb"
+    ],
+    "-": [
+      "wb"
+    ],
+    "--": [
+      "punctuation",
+      "wb"
+    ],
+    "----": [
+      "punctuation",
+      "wb"
+    ],
+    "-e": [
+      "izaafat"
+    ],
+    ".": [
+      "wb"
+    ],
+    ".r": [
+      "consonant"
+    ],
+    ".s": [
+      "consonant"
+    ],
+    ".z": [
+      "consonant"
+    ],
+    "/": [
+      "wb"
+    ],
+    "0": [
+      "number",
+      "wb"
+    ],
+    "1": [
+      "number",
+      "wb"
+    ],
+    "2": [
+      "number",
+      "wb"
+    ],
+    "3": [
+      "number",
+      "wb"
+    ],
+    "4": [
+      "number",
+      "wb"
+    ],
+    "5": [
+      "number",
+      "wb"
+    ],
+    "6": [
+      "number",
+      "wb"
+    ],
+    "7": [
+      "number",
+      "wb"
+    ],
+    "8": [
+      "number",
+      "wb"
+    ],
+    "9": [
+      "number",
+      "wb"
+    ],
+    ":": [
+      "punctuation",
+      "wb"
+    ],
+    ":n": [
+      "consonant"
+    ],
+    ":t": [
+      "consonant"
+    ],
+    ":z": [
+      "consonant"
+    ],
+    ";": [
+      "punctuation",
+      "wb"
+    ],
+    ";aa": [
+      "vowel"
+    ],
+    ";D": [
+      "consonant"
+    ],
+    ";Dh": [
+      "consonant"
+    ],
+    ";e": [
+      "short_vowel"
+    ],
+    ";G": [
+      "consonant"
+    ],
+    ";h": [
+      "consonant"
+    ],
+    ";m": [
+      "vowel_nasal"
+    ],
+    ";N": [
+      "consonant"
+    ],
+    ";o": [
+      "short_vowel",
+      "short_vowel_o"
+    ],
+    ";R": [
+      "consonant"
+    ],
+    ";Rh": [
+      "consonant"
+    ],
+    ";s": [
+      "consonant"
+    ],
+    ";T": [
+      "consonant"
+    ],
+    ";Th": [
+      "consonant"
+    ],
+    ";x": [
+      ";x_class",
+      "consonant"
+    ],
+    ";z": [
+      "consonant"
+    ],
+    "?": [
+      "punctuation",
+      "wb"
+    ],
+    "[": [
+      "punctuation",
+      "wb"
+    ],
+    "]": [
+      "punctuation",
+      "wb"
+    ],
+    "^a": [
+      "short_vowel",
+      "short_vowel_a"
+    ],
+    "^ai": [
+      "vowel"
+    ],
+    "^au": [
+      "vowel"
+    ],
+    "^i": [
+      "short_vowel"
+    ],
+    "^ii": [
+      "vowel"
+    ],
+    "^u": [
+      "short_vowel"
+    ],
+    "^uu": [
+      "vowel"
+    ],
+    "_": [
+      "wb"
+    ],
+    "a": [
+      "short_vowel",
+      "short_vowel_a"
+    ],
+    "aa": [
+      "alef",
+      "vowel"
+    ],
+    "ai": [
+      "vowel"
+    ],
+    "au": [
+      "vowel"
+    ],
+    "b": [
+      "consonant"
+    ],
+    "bh": [
+      "consonant"
+    ],
+    "ch": [
+      "consonant"
+    ],
+    "chh": [
+      "consonant"
+    ],
+    "d": [
+      "consonant"
+    ],
+    "dh": [
+      "consonant"
+    ],
+    "e": [
+      "vowel"
+    ],
+    "f": [
+      "consonant"
+    ],
+    "g": [
+      "consonant"
+    ],
+    "gh": [
+      "consonant"
+    ],
+    "h": [
+      "consonant",
+      "consonant_h"
+    ],
+    "i": [
+      "short_vowel"
+    ],
+    "ii": [
+      "vowel"
+    ],
+    "j": [
+      "consonant"
+    ],
+    "jh": [
+      "consonant"
+    ],
+    "k": [
+      "consonant"
+    ],
+    "kh": [
+      "consonant"
+    ],
+    "l": [
+      "consonant"
+    ],
+    "m": [
+      "consonant"
+    ],
+    "n": [
+      "consonant"
+    ],
+    "o": [
+      "vowel"
+    ],
+    "p": [
+      "consonant"
+    ],
+    "ph": [
+      "consonant"
+    ],
+    "q": [
+      "consonant"
+    ],
+    "r": [
+      "consonant"
+    ],
+    "s": [
+      "consonant"
+    ],
+    "sh": [
+      "consonant"
+    ],
+    "t": [
+      "consonant"
+    ],
+    "th": [
+      "consonant"
+    ],
+    "u": [
+      "short_vowel"
+    ],
+    "uu": [
+      "vowel"
+    ],
+    "v": [
+      "consonant"
+    ],
+    "w": [
+      "consonant"
+    ],
+    "y": [
+      "consonant"
+    ],
+    "z": [
+      "consonant"
+    ],
+    "zh": [
+      "consonant"
+    ],
+    "|": [
+      "hindi_break"
+    ]
+  },
+  "whitespace": {
+    "consolidate": true,
+    "default": " ",
+    "token_class": "wb"
+  }
+}

@@ -1,4 +1,4 @@
 # ghalib.js
-New repository for javascript on Columbia
+New repository for javascript/elm on franpritchett.com
 
 
