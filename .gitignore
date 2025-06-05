@@ -65,3 +65,4 @@ docs/_build/
 target/
 elm-stuff/
 node_modules/
+.DS_Store
