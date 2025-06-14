@@ -39,17 +39,17 @@ specialNode model node =
 
                 newChildren =
                     let
+                        --transliterateChildren : GraphTransliterator Nodes
                         transliterateChildren transliterator =
-                            List.foldl
+                            List.map
                                 (\n ->
                                     case n of
                                         Text x ->
-                                            (++) [ Text (transliterate x transliterator) ]
+                                            Text (transliterate x transliterator)
 
                                         _ ->
-                                            (++) [ n ]
+                                            n
                                 )
-                                []
                     in
                     case model.displayScript of
                         PlainRoman ->
